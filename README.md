@@ -20,3 +20,25 @@
 - Вывод списка всех студентов по среднему баллу (от низкого к высокому)
 - Вывод списка всех студентов по имени (по алфавиту)
 - Использование JDBC (Java Database Connectivity) для подключения к базе данных, выполнения SQL-запросов и обработки результатов.
+
+## Использование базы данных MySQL
+
+Для использования этого приложения вам потребуется установить и настроить базу данных MySQL на вашем компьютере или сервере.
+
+### Установка и настройка MySQL
+
+1. Установите MySQL на вашем компьютере, следуя инструкциям на [официальном сайте MySQL](https://dev.mysql.com/downloads/).
+
+2. Создайте базу данных с именем `students_db` и таблицу `students`, используя следующий SQL-скрипт:
+
+   ```sql
+   CREATE DATABASE students_db;
+   USE students_db;
+
+   CREATE TABLE students (
+       ID INT AUTO_INCREMENT PRIMARY KEY,
+       FirstName VARCHAR(255),
+       LastName VARCHAR(255),
+       Age INT,
+       AverageScore FLOAT
+   );
