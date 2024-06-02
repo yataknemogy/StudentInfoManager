@@ -1,35 +1,35 @@
-# Управление информацией о студентах
+# Student Information Management
 
-Это приложение предназначено для управления информацией о студентах с использованием базы данных MySQL.
+This application is designed for managing student information using a MySQL database.
 
-## Структура базы данных MySQL
+## MySQL Database Structure
 
-База данных содержит следующие поля для каждого студента:
-- ID (идентификатор студента, автоинкрементирующийся)
-- Имя
-- Фамилия
-- Возраст
-- Средний балл
+The database contains the following fields for each student:
+- ID (student identifier, auto-incrementing)
+- First Name
+- Last Name
+- Age
+- Average Score
 
-## Функциональность в Students.java
+## Functionality in Students.java
 
-- Добавление нового студента в базу данных
-- Изменение информации о студенте по его ID
-- Поиск студента по его ID и вывод информации о нем
-- Вывод списка всех студентов в базе данных
-- Вывод списка всех студентов по среднему баллу (от низкого к высокому)
-- Вывод списка всех студентов по имени (по алфавиту)
-- Использование JDBC (Java Database Connectivity) для подключения к базе данных, выполнения SQL-запросов и обработки результатов.
+- Add a new student to the database
+- Update student information by their ID
+- Search for a student by their ID and display their information
+- Display a list of all students in the database
+- Display a list of all students sorted by average score (from lowest to highest)
+- Display a list of all students sorted by first name (alphabetically)
+- Use JDBC (Java Database Connectivity) to connect to the database, execute SQL queries, and handle results.
 
-## Использование базы данных MySQL
+## Using MySQL Database
 
-Для использования этого приложения вам потребуется установить и настроить базу данных MySQL на вашем компьютере или сервере.
+To use this application, you need to install and configure the MySQL database on your computer or server.
 
-### Установка и настройка MySQL
+### Installing and Configuring MySQL
 
-1. Установите MySQL на вашем компьютере, следуя инструкциям на [официальном сайте MySQL](https://dev.mysql.com/downloads/).
+1. Install MySQL on your computer by following the instructions on the [official MySQL website](https://dev.mysql.com/downloads/).
 
-2. Создайте базу данных с именем `students_db` и таблицу `students`, используя следующий SQL-скрипт:
+2. Create a database named `students_db` and a table named `students` using the following SQL script:
 
    ```sql
    CREATE DATABASE students_db;
@@ -42,3 +42,7 @@
        Age INT,
        AverageScore FLOAT
    );
+
+## License
+
+This project is licensed under the MIT License.
